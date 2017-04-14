@@ -2,8 +2,8 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.status(200).send("Simple API with Heroku, Node & Travis!");
+app.get('/', function(req, res) {
+  res.status(200).send('Simple API with Heroku, Node & Travis!');
 });
 
 app.listen(process.env.PORT || 8080);
